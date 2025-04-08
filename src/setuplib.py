@@ -3,7 +3,7 @@
 Version @release
 
 Copyright (c) 2025 Peter Triesberger
-For further information see https://github.com/peter88213/tlviewer_xx
+For further information see https://github.com/peter88213/yw_tlview.xx
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 from shutil import copytree
@@ -17,7 +17,7 @@ except ModuleNotFoundError:
     print('The tkinter module is missing. Please install the tk support package for your python3 version.')
     sys.exit(1)
 
-APP = 'tlviewer'
+APP = 'yw_tlview'
 
 root = Tk()
 processInfo = Label(root, text='')
@@ -69,7 +69,7 @@ def main(zipped=True):
         copy_tree('locale', applicationDir)
         output(f'Sucessfully installed the language pack at "{os.path.normpath(applicationDir)}"')
     else:
-        output(f'ERROR: Cannot find a tlviewer installation at "{applicationDir}"')
+        output(f'ERROR: Cannot find a yw_tlview installation at "{applicationDir}"')
 
     root.quitButton = Button(text="Quit", command=quit)
     root.quitButton.config(height=1, width=30)

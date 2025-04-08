@@ -1,13 +1,13 @@
 """Download the latest "messages.pot" file from the GitHub repository.
 
 Copyright (c) 2025 Peter Triesberger
-For further information see https://github.com/peter88213/tlviewer_xx
+For further information see https://github.com/peter88213/yw_tlview.xx
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import os
 import urllib.request
 
-POT_URL = 'https://raw.githubusercontent.com/peter88213/timeline-view-tk/refs/heads/main/i18n/messages.pot'
+POT_URL = 'https://raw.githubusercontent.com/peter88213/yw_tlview/refs/heads/main/i18n/messages.pot'
 
 targetPath = '../i18n/'
 with urllib.request.urlopen(POT_URL) as f:

@@ -1,11 +1,11 @@
-"""Build a tlviewer language pack.
+"""Build a yw_tlview language pack.
 
-- Generate the language specific '*.mo' dictionary for the tlviewer application.
+- Generate the language specific '*.mo' dictionary for the yw_tlview application.
 - Create a self-extracting Python archive for distribution.
 - Create an optional zipfile.
 
 Copyright (c) 2025 Peter Triesberger
-For further information see https://github.com/peter88213/tlviewer_xx
+For further information see https://github.com/peter88213/yw_tlview.xx
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import os
@@ -19,7 +19,7 @@ from settings import *
 
 
 def main():
-    print(f'Build a tlviewer language pack for {languageName}.')
+    print(f'Build a yw_tlview language pack for {languageName}.')
 
     # Check whether tranlsations are complete.
     if not set_up.main():
@@ -41,13 +41,13 @@ def main():
 
     # Create the release package.
     copy2('../src/setuplib.py', '../build')
-    distPath = f'../tlviewer_{languageCode}.pyzw'
+    distPath = f'../yw_tlview_{languageCode}.pyzw'
     print(f'Writing "{distPath}" ...')
     zipapp.create_archive('../build', target=distPath, main='setuplib:main', compressed=True)
 
     # Create the optional zip file.
     copy2('../src/setup.pyw', '../build')
-    zipPath = f'../tlviewer_{languageCode}.zip'
+    zipPath = f'../yw_tlview_{languageCode}.zip'
     print(f'Writing "{zipPath}" ...')
     with zipfile.ZipFile(zipPath, 'w') as release:
         os.chdir('../build')

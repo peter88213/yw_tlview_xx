@@ -1,9 +1,9 @@
-"""Set up translations for the tlviewer language pack.
+"""Set up translations for the yw_tlview language pack.
 
-- Generate the language specific '*.po' dictionaries for tlviewer and its plugins.
+- Generate the language specific '*.po' dictionaries for yw_tlview and its plugins.
 
 Copyright (c) 2025 Peter Triesberger
-For further information see https://github.com/peter88213/tlviewer_xx
+For further information see https://github.com/peter88213/yw_tlview.xx
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 from settings import languageName
@@ -11,7 +11,7 @@ import translations
 
 
 def main():
-    print(f'Set up tlviewer translation files for {languageName}.')
+    print(f'Set up yw_tlview translation files for {languageName}.')
 
     translationsComplete = True
     poPath = f'../i18n'
