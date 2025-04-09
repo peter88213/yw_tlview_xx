@@ -72,7 +72,7 @@ You may want to put a posting in the [timeline-view-tk forum](https://github.com
 
 ## License
 
-This is Open Source software, and *tlviewer-xx* is licenced under GPLv3. See the
+This is Open Source software, and *yw_tlview_xx* is licenced under GPLv3. See the
 [GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
 details, or consult the [LICENSE](https://github.com/peter88213/yw_tlview_xx/blob/main/LICENSE) file.
 
